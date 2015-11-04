@@ -9,9 +9,9 @@ lib.properties = {
 	fps: 24,
 	color: "#FFFFFF",
 	manifest: [
-		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/_11.png", id:"_11"},
-		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/_157308.jpg", id:"_157308"},
-		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/_22.png", id:"_22"},
+		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/11.png", id:"_11"},
+		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/157308.jpg", id:"_157308"},
+		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/22.png", id:"_22"},
 		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/crack.png", id:"crack"},
 		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/h1.png", id:"h1"},
 		{src:"https://raw.githubusercontent.com/ctr-design/banners/gh-pages/adwice/zombi-HTML5/h2.png", id:"h2"},
