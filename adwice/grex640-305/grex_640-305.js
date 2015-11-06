@@ -1150,7 +1150,19 @@ p.nominalBounds = new cjs.Rectangle(-126.6,-4.8,460.6,395.9);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		this.monka.addEventListener("click", fl_ClickToGoToWebPage);
+		var bodyStyle = document.body.style;
+		bodyStyle.margin = 0;
+		bodyStyle.padding = 0;
+		
+		
+		
+		this.bt2.addEventListener("click", fl_ClickToGoToWebPage1);
+		
+		function fl_ClickToGoToWebPage1() {
+			window.open(clickTAG, "_blank");
+		}
+		
+		this.bt.addEventListener("click", fl_ClickToGoToWebPage);
 		
 		function fl_ClickToGoToWebPage() {
 			window.open(clickTAG, "_blank");
@@ -1199,7 +1211,7 @@ p.nominalBounds = new cjs.Rectangle(-126.6,-4.8,460.6,395.9);
 
 	// Слой 3
 	this.bt = new lib.Символ60();
-	this.bt.setTransform(322.9,142.6,1,1,0,0,0,347.9,172.5);
+	this.bt.setTransform(307.9,153.5,1,1,0,0,0,347.9,172.5);
 	new cjs.ButtonHelper(this.bt, 0, 1, 2, false, new lib.Символ60(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.bt).wait(1));
