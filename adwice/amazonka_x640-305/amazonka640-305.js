@@ -16,6 +16,7 @@ lib.properties = {
 		{src:"images/a5.png", id:"a5"},
 		{src:"images/a6.png", id:"a6"},
 		{src:"images/a7.png", id:"a7"},
+		{src:"images/casinox.png", id:"casinox"},
 		{src:"images/fon.jpg", id:"fon"},
 		{src:"images/h1.png", id:"h1"},
 		{src:"images/h2.png", id:"h2"},
@@ -76,6 +77,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,118,226);
 	this.initialize(img.a7);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,77,82);
+
+
+(lib.casinox = function() {
+	this.initialize(img.casinox);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,409,86);
 
 
 (lib.fon = function() {
@@ -300,6 +307,18 @@ p.nominalBounds = new cjs.Rectangle(-1.5,-1.5,102.1,65);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
+
+
+(lib.Символ45 = function() {
+	this.initialize();
+
+	// Слой 1
+	this.instance = new lib.casinox();
+	this.instance.setTransform(0,0,0.231,0.231);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,94.7,19.9);
 
 
 (lib.Символ31 = function() {
@@ -1131,7 +1150,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,95.9,109.3);
 
 	// Слой 2
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF0000").s().p("AhmB+QgBABAAgGQAAgDAMgNIgEgBQgBAAAAgGQAAgKBMhYIgCAAQgZgWgmgrQgngqAAgGQAAgTAYAVQAGgFAZAbQAIgEATAPQAbAVAQAfIAQgSIAAgBQAAgKAkgjQAkgjAKABIACABIABAFQAKgGAKgDIABACIABAFQAAACgvAvIg6BLIArAkQAtAmAAAHQAAAHgEADIAJAIIgBAFQgCACgGAAQgFAAgzgvIgrgnQhPBogUAAg");
+	this.shape.graphics.f("#FF0000").s().p("AhnB+QgBABAAgGQABgDAMgNIgEgBQgBAAAAgGQAAgKBMhYIgCAAQgZgWgngrQgmgqAAgGQAAgTAZAVQAEgFAaAbQAIgEATAPQAbAVAQAfIAQgSIAAgBQAAgKAkgjQAkgjAKABIACABIABAFQAKgGAKgDIACACIABAFQAAACgxAvIg5BLIArAkQAtAmAAAHQAAAHgEADIAJAIIgCAFQgBACgGAAQgFAAgzgvIgrgnQhQBogTAAg");
 	this.shape.setTransform(109.7,107.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(11));
@@ -1826,6 +1845,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,56.6,109.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.pric).wait(1));
 
+	// Слой 3
+	this.instance = new lib.Символ45();
+	this.instance.setTransform(591.9,293.7,0.889,0.889,0,0,0,47.3,10);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	// Слой 2
 	this.girl = new lib.Символ1();
 	this.girl.setTransform(318,163.1,1,1,0,0,0,56,159.8);
@@ -1844,32 +1869,32 @@ p.nominalBounds = new cjs.Rectangle(0,0,56.6,109.9);
 	this.timeline.addTween(cjs.Tween.get(this.button).wait(1));
 
 	// Слой 9
-	this.instance = new lib.Символ72();
-	this.instance.setTransform(671.4,113.8,1,1,0,0,0,28.2,55.8);
-	this.instance.alpha = 0.469;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	// Слой 1
-	this.instance_1 = new lib.Символ50();
-	this.instance_1.setTransform(131.4,215.1,1,1,0,0,0,78,139);
+	this.instance_1 = new lib.Символ72();
+	this.instance_1.setTransform(671.4,113.8,1,1,0,0,0,28.2,55.8);
+	this.instance_1.alpha = 0.469;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
+	// Слой 1
+	this.instance_2 = new lib.Символ50();
+	this.instance_2.setTransform(131.4,215.1,1,1,0,0,0,78,139);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+
 	// Слой 22
-	this.instance_2 = new lib.Символ61();
-	this.instance_2.setTransform(512.3,43.6,1,1,0,0,0,99,27.7);
+	this.instance_3 = new lib.Символ61();
+	this.instance_3.setTransform(512.3,43.6,1,1,0,0,0,99,27.7);
 
-	this.instance_3 = new lib.Символ60();
-	this.instance_3.setTransform(131.3,34.9,1,1,0,0,0,85.1,10.5);
+	this.instance_4 = new lib.Символ60();
+	this.instance_4.setTransform(131.3,34.9,1,1,0,0,0,85.1,10.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.instance_3}]}).wait(1));
 
 	// Слой 1
-	this.instance_4 = new lib.trree();
-	this.instance_4.setTransform(259,-73.9);
+	this.instance_5 = new lib.trree();
+	this.instance_5.setTransform(259,-73.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1));
 
 	// Слой 8
 	this.fon = new lib.Символ51();
