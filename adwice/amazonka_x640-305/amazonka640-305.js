@@ -1132,18 +1132,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,95.9,109.3);
 	// Слой 2
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FF0000").s().p("AhmB+QgBABAAgGQAAgDAMgNIgEgBQgBAAAAgGQAAgKBMhYIgCAAQgZgWgmgrQgngqAAgGQAAgTAYAVQAGgFAZAbQAIgEATAPQAbAVAQAfIAQgSIAAgBQAAgKAkgjQAkgjAKABIACABIABAFQAKgGAKgDIABACIABAFQAAACgvAvIg6BLIArAkQAtAmAAAHQAAAHgEADIAJAIIgBAFQgCACgGAAQgFAAgzgvIgrgnQhPBogUAAg");
-	this.shape.setTransform(44.8,62.4);
+	this.shape.setTransform(109.7,107.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(11));
 
 	// Слой 1
 	this.instance = new lib.Символ32();
-	this.instance.setTransform(123.2,117,1,1,0,0,0,48,54.6);
+	this.instance.setTransform(188.2,162,1,1,0,0,0,48,54.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:0.88,scaleY:0.88},4).to({scaleX:1,scaleY:1},6).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(32.3,49.6,138.9,122.1);
+p.nominalBounds = new cjs.Rectangle(97.2,94.6,138.9,122.1);
 
 
 (lib.Символ25 = function(mode,startPosition,loop) {
@@ -1311,6 +1311,31 @@ p.nominalBounds = new cjs.Rectangle(0,0.1,56.3,38.2);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,76.4,104.6);
+
+
+(lib.Символ11 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+	}
+	this.frame_1 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(1));
+
+	// Слой 1
+	this.instance = new lib.Символ30();
+	this.instance.setTransform(15.8,5,1,1,0,0,0,48,54.6);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = null;
 
 
 (lib.Символ10 = function(mode,startPosition,loop) {
@@ -1759,6 +1784,24 @@ p.nominalBounds = new cjs.Rectangle(0,0,56.6,109.9);
 			this.pric.y = stage.mouseY;
 		}
 		
+		this.button.addEventListener("mouseover", fl_pric.bind(this));
+		function fl_pric() {
+			this.pric.gotoAndStop(1);
+		}
+		this.button.addEventListener("mouseout", fl_pric1.bind(this));
+		function fl_pric1() {
+			this.pric.gotoAndStop(0);
+		}
+		
+		
+		this.girl.addEventListener("mouseover", fl_pric2.bind(this));
+		function fl_pric2() {
+			this.pric.gotoAndStop(1);
+		}
+		this.girl.addEventListener("mouseout", fl_pric3.bind(this));
+		function fl_pric3() {
+			this.pric.gotoAndStop(1);
+		}
 		
 		this.button.addEventListener("mousedown", fl_button);
 		
@@ -1778,8 +1821,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,56.6,109.9);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Слой 18
-	this.pric = new lib.Символ30();
-	this.pric.setTransform(462.6,169.3,1,1,0,0,0,48,54.6);
+	this.pric = new lib.Символ11();
+	this.pric.setTransform(516.3,225.4,1,1,0,0,0,69.4,61.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.pric).wait(1));
 
