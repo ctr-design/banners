@@ -826,18 +826,18 @@ p.nominalBounds = new cjs.Rectangle(-169.6,-78.8,281.1,205.7);
 	this.frame_0 = function() {
 		this.stop();
 	}
-	this.frame_14 = function() {
+	this.frame_9 = function() {
 		this.stop();
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(14).call(this.frame_14).wait(16));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(9).call(this.frame_9).wait(3));
 
 	// Слой 3
 	this.instance = new lib.Символ36();
 	this.instance.setTransform(-25.8,-131.4);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:-21.8,y:-76.2},14).to({x:-25.8,y:-131.4},15).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:-21.8,y:-76.2},9).to({x:-25.8,y:-131.4},2).wait(1));
 
 	// Слой 4
 	this.instance_1 = new lib.Анимация5("synched",0);
@@ -847,14 +847,14 @@ p.nominalBounds = new cjs.Rectangle(-169.6,-78.8,281.1,205.7);
 	this.instance_2.setTransform(-24.9,-79.1);
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true,scaleX:1,x:-24.9},14).to({_off:false,x:-378.5},15).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:false},14).to({_off:true,x:-378.5},15).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true,scaleX:1,x:-24.9},9).to({_off:false,x:-378.5},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:false},9).to({_off:true,x:-378.5},2).wait(1));
 
 	// Слой 1
 	this.instance_3 = new lib.Символ2();
 	this.instance_3.setTransform(4,-9);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({y:24.6},14).to({y:-9},15).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({y:24.6},9).to({y:-9},2).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-510.3,-610.4,625.8,771);
@@ -1186,8 +1186,12 @@ p.nominalBounds = new cjs.Rectangle(-12.5,-10.6,78.2,76.3);
 		stage.canvas.onmouseout = fl_MouseOutHandler_2;
 		 function fl_MouseOutHandler_2()
 		    {
-			    _this.bar.gotoAndPlay(15);
+			    _this.bar.gotoAndPlay(10);
 		    }
+			
+		var bodyStyle = document.body.style;
+		bodyStyle.margin = 0;
+		bodyStyle.padding = 0;
 	}
 
 	// actions tween:
