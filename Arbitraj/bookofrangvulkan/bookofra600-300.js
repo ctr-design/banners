@@ -12,7 +12,8 @@ lib.properties = {
 		{src:"images/money.png", id:"money"},
 		{src:"images/rab.png", id:"rab"},
 		{src:"images/rali.jpg", id:"rali"},
-		{src:"images/sloRa1.jpg", id:"sloRa1"}
+		{src:"images/sloRa1.jpg", id:"sloRa1"},
+		{src:"images/vulk.png", id:"vulk"}
 	]
 };
 
@@ -44,6 +45,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,13,385);
 	this.initialize(img.sloRa1);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,128,753);
+
+
+(lib.vulk = function() {
+	this.initialize(img.vulk);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,200,136);
 
 
 (lib.Символ30 = function() {
@@ -947,6 +954,12 @@ p.nominalBounds = new cjs.Rectangle(0,-1125.5,897.1,1926.5);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
+	// Слой 2
+	this.instance = new lib.vulk();
+	this.instance.setTransform(-3.3,196.2,0.559,0.559,-9);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	// Слой 1
 	this.button_2 = new lib.Символ20();
 	this.button_2.setTransform(300.3,261.1,0.779,0.779,0,0,0,211.8,35.2);
@@ -962,19 +975,19 @@ p.nominalBounds = new cjs.Rectangle(0,-1125.5,897.1,1926.5);
 	this.timeline.addTween(cjs.Tween.get(this.button_1).wait(1));
 
 	// Слой 3
-	this.instance = new lib.Символ11();
-	this.instance.setTransform(264.4,-351.2,1,1,0,0,0,439.4,-162.3);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	// Слой 4
-	this.instance_1 = new lib.Символ2();
-	this.instance_1.setTransform(279.5,43.1,1,1,0,0,0,650.6,225.8);
+	this.instance_1 = new lib.Символ11();
+	this.instance_1.setTransform(264.4,-352.2,1,1,0,0,0,439.4,-162.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
+	// Слой 4
+	this.instance_2 = new lib.Символ2();
+	this.instance_2.setTransform(279.5,43.1,1,1,0,0,0,650.6,225.8);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-74.1,-1164.4,1304.3,1926.5);
+p.nominalBounds = new cjs.Rectangle(-74.1,-1165.4,1304.3,1926.5);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
