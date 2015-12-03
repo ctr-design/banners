@@ -214,6 +214,19 @@ p.nominalBounds = new cjs.Rectangle(0,0,83,118);
 p.nominalBounds = new cjs.Rectangle(0,0,83,118);
 
 
+(lib.Символ60 = function() {
+	this.initialize();
+
+	// Слой 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.lf(["#990000","#FF0000"],[0,1],-38.6,0,38.7,0).s().p("AmBBtIC7AAIhTpbIIWAAIgqJbICvAAImCGCg");
+	this.shape.setTransform(38.7,49.6);
+
+	this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,77.4,99.1);
+
+
 (lib.Символ47 = function() {
 	this.initialize();
 
@@ -334,6 +347,31 @@ p.nominalBounds = new cjs.Rectangle(0,0,640,305);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,83,118);
+
+
+(lib.Символ59 = function() {
+	this.initialize();
+
+	// Слой 1
+	this.instance = new lib.Символ60();
+	this.instance.setTransform(38.6,49.6,1,1,0,0,0,38.6,49.6);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,77.4,99.1);
+
+
+(lib.Символ58 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Слой 1
+	this.instance = new lib.Символ59();
+	this.instance.setTransform(38.6,49.6,1,1,0,0,0,38.6,49.6);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:38.7,regY:49.5,scaleY:1,x:38.7,y:49.9},0).wait(1).to({scaleY:0.99,y:51.1},0).wait(1).to({scaleY:0.98,y:53},0).wait(1).to({scaleY:0.97,y:55.7},0).wait(1).to({scaleY:0.96,y:59.1},0).wait(1).to({scaleY:0.94,y:63.4},0).wait(1).to({scaleY:0.91,y:68.4},0).wait(1).to({scaleY:0.89,y:74.2},0).wait(1).to({regX:38.6,scaleY:0.85,x:38.6,y:80.9},0).wait(1).to({regX:38.7,scaleY:0.88,x:38.7,y:74.9},0).wait(1).to({scaleY:0.91,y:69.6},0).wait(1).to({scaleY:0.93,y:64.9},0).wait(1).to({scaleY:0.95,y:60.8},0).wait(1).to({scaleY:0.96,y:57.4},0).wait(1).to({scaleY:0.98,y:54.6},0).wait(1).to({scaleY:0.99,y:52.4},0).wait(1).to({scaleY:0.99,y:50.8},0).wait(1).to({scaleY:1,y:49.9},0).wait(1).to({regX:38.6,regY:49.6,scaleY:1,x:38.6,y:49.6},0).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,77.4,99.1);
 
 
 (lib.Символ46 = function(mode,startPosition,loop) {
@@ -574,29 +612,48 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,150);
 p.nominalBounds = new cjs.Rectangle(0,0,150,150);
 
 
-(lib.Символ13 = function() {
+(lib.Символ61 = function() {
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Символ5();
-	this.instance.setTransform(558.3,45.2,1,1,0,0,180,13.2,13.2);
+	this.instance = new lib.Символ58();
+	this.instance.setTransform(-63.7,88.9,0.408,0.408,-98,0,0,38.6,49.5);
 
-	this.instance_1 = new lib.Символ4копия();
-	this.instance_1.setTransform(105,21,1,1,0,0,0,21,21);
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-85.9,70.4,44.4,36.9);
 
-	this.instance_2 = new lib.Символ4();
-	this.instance_2.setTransform(58,204,1,1,0,0,0,21,21);
 
-	this.instance_3 = new lib.Символ3();
-	this.instance_3.setTransform(543.3,184.2,1,1,0,0,180,14.2,14.2);
+(lib.Символ13 = function() {
+	this.initialize();
 
-	this.instance_4 = new lib.Символ1();
-	this.instance_4.setTransform(79,139,1,1,0,0,0,79,63);
+	// Слой 2
+	this.instance = new lib.Символ61();
+	this.instance.setTransform(527.5,39.3,0.563,0.563,90,0,0,-64.2,87.9);
 
-	this.instance_5 = new lib.Символ6();
-	this.instance_5.setTransform(325,168.5,1,1,0,0,0,320,152.5);
+	this.instance_1 = new lib.Символ61();
+	this.instance_1.setTransform(493,157.3,0.563,0.563,90,0,0,-64.2,87.9);
 
-	this.addChild(this.instance_5,this.instance_4,this.instance_3,this.instance_2,this.instance_1,this.instance);
+	// Слой 1
+	this.instance_2 = new lib.Символ5();
+	this.instance_2.setTransform(558.3,45.2,1,1,0,0,180,13.2,13.2);
+
+	this.instance_3 = new lib.Символ4копия();
+	this.instance_3.setTransform(105,21,1,1,0,0,0,21,21);
+
+	this.instance_4 = new lib.Символ4();
+	this.instance_4.setTransform(58,204,1,1,0,0,0,21,21);
+
+	this.instance_5 = new lib.Символ3();
+	this.instance_5.setTransform(543.3,184.2,1,1,0,0,180,14.2,14.2);
+
+	this.instance_6 = new lib.Символ1();
+	this.instance_6.setTransform(79,139,1,1,0,0,0,79,63);
+
+	this.instance_7 = new lib.Символ6();
+	this.instance_7.setTransform(325,168.5,1,1,0,0,0,320,152.5);
+
+	this.addChild(this.instance_7,this.instance_6,this.instance_5,this.instance_4,this.instance_3,this.instance_2,this.instance_1,this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,645,321);
 
