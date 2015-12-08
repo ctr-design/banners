@@ -122,6 +122,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,100,87);
 p.nominalBounds = new cjs.Rectangle(0,0,147.5,45.8);
 
 
+(lib.Символ114 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Слой 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().dr(-463.15,-248.5,926.3,497);
+	this.shape.setTransform(463.1,248.5);
+	this.shape._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = null;
+
+
 (lib.Символ107 = function() {
 	this.initialize();
 
@@ -2469,14 +2484,22 @@ p.nominalBounds = new cjs.Rectangle(-2.8,-1.1,645.3,337.9);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		/* Нажмите для перехода к кадру и остановки воспроизведения
-		При нажатии на указанный экземпляр символа точка воспроизведения перемещается на кадр, указанный на временной шкале, а воспроизведение останавливается.
-		Может использоваться на основной временной шкале или на временной шкале фрагмента ролика.
+		var bodyStyle = document.body.style;
+		bodyStyle.margin = 0;
+		bodyStyle.padding = 0;
 		
-		Инструкции:
-		1. Замените цифру 5 в коде ниже на номер кадра, с которого продолжится воспроизведение после нажатия на экземпляр символа.
-		2. Номера кадров в EaselJS начинаются с 0, а не с 1
-		*/
+		this.icons.addEventListener("click", fl_ClickToGoToWebPage);
+		
+		function fl_ClickToGoToWebPage() {
+			window.open(clickTAG, "_blank");
+		}
+		
+		this.bt.addEventListener("click", fl_ClickToGoToWebPage1);
+		
+		function fl_ClickToGoToWebPage1() {
+			window.open(clickTAG, "_blank");
+		}
+		
 		
 		
 		this.icons.addEventListener("mouseover", fl_ClickToGoToAndStopAtFrame.bind(this));
@@ -2499,17 +2522,24 @@ p.nominalBounds = new cjs.Rectangle(-2.8,-1.1,645.3,337.9);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Слой 4
-	this.instance = new lib.Символ106();
-	this.instance.setTransform(322.7,280.9,1,1,0,0,0,175.4,14.2);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 	// Слой 3
 	this.icons = new lib.Символ108();
 	this.icons.setTransform(321.3,133.5,1,1,0,0,0,319.9,156.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.icons).wait(1));
+
+	// Слой 7
+	this.bt = new lib.Символ114();
+	this.bt.setTransform(378.1,143,1,1,0,0,0,463.1,248.5);
+	new cjs.ButtonHelper(this.bt, 0, 1, 2, false, new lib.Символ114(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.bt).wait(1));
+
+	// Слой 4
+	this.instance = new lib.Символ106();
+	this.instance.setTransform(322.7,280.9,1,1,0,0,0,175.4,14.2);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// Слой 1
 	this.girl = new lib.Символ109();
@@ -2524,7 +2554,7 @@ p.nominalBounds = new cjs.Rectangle(-2.8,-1.1,645.3,337.9);
 	this.timeline.addTween(cjs.Tween.get(this.fon).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(248.3,59.2,864.3,559.4);
+p.nominalBounds = new cjs.Rectangle(235,47,926.3,571.6);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
