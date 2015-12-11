@@ -8,7 +8,16 @@ lib.properties = {
 	height: 1080,
 	fps: 24,
 	color: "#FFFFFF",
-	manifest: []
+	manifest: [
+		{src:"images/baraban.png", id:"baraban"},
+		{src:"images/ddd3.png", id:"ddd3"},
+		{src:"images/play_fortuna_xmass.jpg", id:"play_fortuna_xmass"},
+		{src:"images/sf12.png", id:"sf12"},
+		{src:"images/ss5.png", id:"ss5"},
+		{src:"images/star.png", id:"star"},
+		{src:"images/star2.png", id:"star2"},
+		{src:"images/yy87.png", id:"yy87"}
+	]
 };
 
 
@@ -18,59 +27,51 @@ lib.properties = {
 
 
 (lib.baraban = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.baraban);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,575,400);
 
 
 (lib.ddd3 = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.ddd3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,80,76);
 
 
 (lib.play_fortuna_xmass = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.play_fortuna_xmass);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1080);
 
 
 (lib.sf12 = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.sf12);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,80,76);
 
 
 (lib.ss5 = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.ss5);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,80,76);
 
 
 (lib.star = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.star);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,155,150);
 
 
 (lib.star2 = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.star2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,155,150);
 
 
 (lib.yy87 = function() {
-	this.spriteSheet = ss["lend_atlas_"];
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.yy87);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,80,76);
 
 
 (lib.Символ6 = function() {
