@@ -2017,6 +2017,12 @@ p.nominalBounds = new cjs.Rectangle(-278.9,-120.7,333.6,263.4);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
+	// Слой 2
+	this.instance = new lib.Символ1();
+	this.instance.setTransform(320,161);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 	// Слой 5
 	this.rul = new lib.Символ75();
 	this.rul.setTransform(726.1,152.2,1,1,0,0,0,2.8,0);
@@ -2029,12 +2035,6 @@ p.nominalBounds = new cjs.Rectangle(-278.9,-120.7,333.6,263.4);
 	new cjs.ButtonHelper(this.button, 0, 1, 2, false, new lib.Символ98(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.button).wait(1));
-
-	// Слой 2
-	this.instance = new lib.Символ1();
-	this.instance.setTransform(320,161);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// Символ 49
 	this.instance_1 = new lib.Символ51();
