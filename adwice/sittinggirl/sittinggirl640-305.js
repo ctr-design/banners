@@ -855,15 +855,16 @@ p.nominalBounds = new cjs.Rectangle(-172,-204.2,1615,498.4);
 p.nominalBounds = new cjs.Rectangle(-1240.4,-205.8,1526,500.9);
 
 
-(lib.Символ21 = function() {
-	this.initialize();
+(lib.Символ21 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
 	this.instance = new lib.Символ6();
 	this.instance.setTransform(92.3,170.3,0.845,0.845,0,0,0,109.3,201.6);
 
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:95.9},2).to({x:92.3},2).to({x:95.9},2).to({x:92.3},2).wait(1).to({x:89.9},10).to({x:92.3},10).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,183.8,340.4);
 
 
@@ -984,7 +985,7 @@ p.nominalBounds = new cjs.Rectangle(-61.8,0,988.5,371);
 
 	// Слой 2
 	this.instance = new lib.Символ9();
-	this.instance.setTransform(322.3,168,0.924,0.924,0,0,0,92.2,170.2);
+	this.instance.setTransform(296.3,168,0.924,0.924,0,0,0,92.2,170.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
