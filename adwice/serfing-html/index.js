@@ -394,12 +394,12 @@ p.nominalBounds = new cjs.Rectangle(-6.2,-11.5,13.1,18.4);
 
 	// Слой 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FFFFFF").s().p("AAmBbIgOgvIgyAAIgNAvIgrAAIA4i1IA0AAIA5C1gAASANIgShIIgBAAIgTBIIAmAAg");
-	this.shape.setTransform(-0.3,-2.3);
+	this.shape.graphics.f("#FFFFFF").s().p("AgUBbQgIgBgJgDQgIgEgGgFQgHgFgGgHQgFgFgEgIQgEgIgDgIIgFgSIgBgTQAAgIABgJQACgJADgJQADgJAFgIIAKgOQAGgGAHgFQAHgFAIgEQAJgDAJgCQAIgCAJAAQAKAAAJACQAKACAIADQAIAEAHAFQAGAFAGAGQAGAHAEAHQAEAIADAIQAFAXAAANQAAAIgCALQgBAJgDAJQgEAKgEAHQgFAIgFAGIgOALQgGAFgJADIgRAFQgKABgIAAQgJAAgKgCgAgRg3QgIAEgGAIQgGAJgDALQgCAMAAALQAAANACAMQAEAKAFAJQAGAIAJAEQAHAFAJAAQAKAAAJgFQAHgFAGgIQAGgIACgLQADgMABgMQgBgMgDgLQgCgLgGgIQgGgJgHgEQgJgFgKAAQgIAAgJAFg");
+	this.shape.setTransform(0.2,-1.9);
 
 	this.addChild(this.shape);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-8.6,-11.4,16.7,18.2);
+p.nominalBounds = new cjs.Rectangle(-8.6,-11.3,17.5,18.8);
 
 
 (lib.Символ16 = function() {
@@ -1134,7 +1134,7 @@ p.nominalBounds = new cjs.Rectangle(-12,-4.1,24.1,8.4);
 	this.timeline.addTween(cjs.Tween.get(this.instance_15).to({y:-34.4},5).to({y:-28},5).wait(35));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-70,-39.8,139.2,50.3);
+p.nominalBounds = new cjs.Rectangle(-70,-39.8,139.2,50.8);
 
 
 (lib.Символ8 = function() {
