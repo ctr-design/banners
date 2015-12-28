@@ -9,14 +9,14 @@ lib.properties = {
 	fps: 30,
 	color: "#FFFFFF",
 	manifest: [
+		{src:"images/baba.png", id:"baba"},
+		{src:"images/golen.png", id:"golen"},
 		{src:"images/hands1.png", id:"hands1"},
 		{src:"images/huhyu777.jpg", id:"huhyu777"},
+		{src:"images/hvost.png", id:"hvost"},
 		{src:"images/icecream.png", id:"icecream"},
-		{src:"images/Слой0копия3.png", id:"Слой0копия3"},
-		{src:"images/Слой1.png", id:"Слой1"},
-		{src:"images/Слой2.png", id:"Слой2"},
-		{src:"images/Слой3.png", id:"Слой3"},
-		{src:"images/Слой4копия2.png", id:"Слой4копия2"}
+		{src:"images/kach.png", id:"kach"},
+		{src:"images/stopa.png", id:"stopa"}
 	]
 };
 
@@ -24,6 +24,18 @@ lib.properties = {
 
 // symbols:
 
+
+
+(lib.baba = function() {
+	this.initialize(img.baba);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,216,254);
+
+
+(lib.golen = function() {
+	this.initialize(img.golen);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,68,83);
 
 
 (lib.hands1 = function() {
@@ -38,40 +50,28 @@ p.nominalBounds = new cjs.Rectangle(0,0,100,93);
 p.nominalBounds = new cjs.Rectangle(0,0,640,305);
 
 
+(lib.hvost = function() {
+	this.initialize(img.hvost);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,26,83);
+
+
 (lib.icecream = function() {
 	this.initialize(img.icecream);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,90,198);
 
 
-(lib.Слой0копия3 = function() {
-	this.initialize(img.Слой0копия3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,216,254);
-
-
-(lib.Слой1 = function() {
-	this.initialize(img.Слой1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,52,60);
-
-
-(lib.Слой2 = function() {
-	this.initialize(img.Слой2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,68,83);
-
-
-(lib.Слой3 = function() {
-	this.initialize(img.Слой3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,26,83);
-
-
-(lib.Слой4копия2 = function() {
-	this.initialize(img.Слой4копия2);
+(lib.kach = function() {
+	this.initialize(img.kach);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,167,282);
+
+
+(lib.stopa = function() {
+	this.initialize(img.stopa);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,52,60);
 
 
 (lib.Символ51 = function() {
@@ -236,7 +236,7 @@ p.nominalBounds = new cjs.Rectangle(-277.2,-7.6,554.5,15.2);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Слой3();
+	this.instance = new lib.hvost();
 	this.instance.setTransform(-13,-41.5);
 
 	this.addChild(this.instance);
@@ -327,7 +327,7 @@ p.nominalBounds = new cjs.Rectangle(-151,-19.1,302.1,38.3);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Слой1();
+	this.instance = new lib.stopa();
 	this.instance.setTransform(-26,-30);
 
 	this.addChild(this.instance);
@@ -363,7 +363,7 @@ p.nominalBounds = new cjs.Rectangle(-0.1,-0.3,0.2,0.6);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Слой2();
+	this.instance = new lib.golen();
 	this.instance.setTransform(-34,-41.5);
 
 	this.addChild(this.instance);
@@ -371,11 +371,11 @@ p.nominalBounds = new cjs.Rectangle(-0.1,-0.3,0.2,0.6);
 p.nominalBounds = new cjs.Rectangle(-34,-41.5,68,83);
 
 
-(lib.Слой4копия2_1 = function() {
+(lib.Слой4копия2 = function() {
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Слой4копия2();
+	this.instance = new lib.kach();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -393,11 +393,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,167,282);
 p.nominalBounds = new cjs.Rectangle(0,0,640,305);
 
 
-(lib.baba = function() {
+(lib.baba_1 = function() {
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Слой0копия3();
+	this.instance = new lib.baba();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -749,7 +749,7 @@ p.nominalBounds = new cjs.Rectangle(0.1,0,140.5,140.6);
 p.nominalBounds = new cjs.Rectangle(0,0.1,140.5,140.5);
 
 
-(lib.Слой3_1 = function(mode,startPosition,loop) {
+(lib.Слой3 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
@@ -762,7 +762,7 @@ p.nominalBounds = new cjs.Rectangle(0,0.1,140.5,140.5);
 p.nominalBounds = new cjs.Rectangle(0,0,26,83);
 
 
-(lib.Слой2_1 = function() {
+(lib.Слой2 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -774,7 +774,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,26,83);
 p.nominalBounds = new cjs.Rectangle(0,0,68,83);
 
 
-(lib.stopa = function(mode,startPosition,loop) {
+(lib.stopa_1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
@@ -882,10 +882,10 @@ p.nominalBounds = new cjs.Rectangle(-143.7,-11.9,287.6,23.9);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Слой2_1();
+	this.instance = new lib.Слой2();
 	this.instance.setTransform(16.5,-24,1,1,0,0,0,34,41.5);
 
-	this.instance_1 = new lib.stopa();
+	this.instance_1 = new lib.stopa_1();
 	this.instance_1.setTransform(-24.5,35.5,1,1,0,0,0,26,30);
 
 	this.addChild(this.instance_1,this.instance);
@@ -1047,15 +1047,15 @@ p.nominalBounds = new cjs.Rectangle(-90,-82.9,188,186);
 	this.instance_1.setTransform(-78,81.5);
 
 	// Слой 3
-	this.instance_2 = new lib.Слой3_1();
+	this.instance_2 = new lib.Слой3();
 	this.instance_2.setTransform(115.5,45.5,1,1,0,0,0,13,41.5);
 
 	// Слой 0 копия 3
-	this.instance_3 = new lib.baba();
+	this.instance_3 = new lib.baba_1();
 	this.instance_3.setTransform(10.5,0,1,1,0,0,0,108,127);
 
 	// Слой 4 копия 2
-	this.instance_4 = new lib.Слой4копия2_1();
+	this.instance_4 = new lib.Слой4копия2();
 	this.instance_4.setTransform(12,-6,1,1,0,0,0,83.5,141);
 
 	this.addChild(this.instance_4,this.instance_3,this.instance_2,this.instance_1,this.green);
