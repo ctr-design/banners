@@ -158,7 +158,7 @@ p.nominalBounds = new cjs.Rectangle(-50.8,-7.3,101.6,14.6);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("И", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("И", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-18.3,-23.5,2.932,2.932);
 
@@ -171,7 +171,7 @@ p.nominalBounds = new cjs.Rectangle(-18.2,-23.4,36.5,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("Л", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("Л", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-17.5,-23.5,2.932,2.932);
 
@@ -184,7 +184,7 @@ p.nominalBounds = new cjs.Rectangle(-17.4,-23.4,34.9,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("И", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("И", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-18.3,-23.5,2.932,2.932);
 
@@ -197,7 +197,7 @@ p.nominalBounds = new cjs.Rectangle(-18.2,-23.4,36.5,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("Н", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("Н", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-18.3,-23.5,2.932,2.932);
 
@@ -210,7 +210,7 @@ p.nominalBounds = new cjs.Rectangle(-18.2,-23.4,36.5,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("А", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("А", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-17.7,-23.5,2.932,2.932);
 
@@ -223,7 +223,7 @@ p.nominalBounds = new cjs.Rectangle(-17.6,-23.4,35.3,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("К", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("К", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-16.8,-23.5,2.932,2.932);
 
@@ -236,7 +236,7 @@ p.nominalBounds = new cjs.Rectangle(-16.8,-23.4,33.6,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("А", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("А", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-17.7,-23.5,2.932,2.932);
 
@@ -249,7 +249,7 @@ p.nominalBounds = new cjs.Rectangle(-17.6,-23.4,35.3,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("Ж", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("Ж", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-21.6,-23.5,2.932,2.932);
 
@@ -262,7 +262,7 @@ p.nominalBounds = new cjs.Rectangle(-21.5,-23.4,43.1,46.9);
 	this.initialize();
 
 	// Слой 1
-	this.text = new cjs.Text("И", "bold 12px 'Myriad Pro'", "#FF0000");
+	this.text = new cjs.Text("И", "bold 12px 'Myriad Pro'", "#FFFFFF");
 	this.text.lineHeight = 12;
 	this.text.setTransform(-18.3,-23.5,2.932,2.932);
 
@@ -1024,7 +1024,7 @@ p.nominalBounds = new cjs.Rectangle(-79.4,-41,158.8,94.1);
 	// Слой 1
 	this.instance = new lib.Символ82();
 	this.instance.setTransform(0.2,0);
-	this.instance.shadow = new cjs.Shadow("#FFFFFF",0,0,17);
+	this.instance.shadow = new cjs.Shadow("#FF0000",0,0,17);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
