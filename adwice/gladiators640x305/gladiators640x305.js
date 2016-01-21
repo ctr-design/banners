@@ -9,23 +9,23 @@ lib.properties = {
 	fps: 24,
 	color: "#FFFFFF",
 	manifest: [
-		{src:"images/_2glad_03.png", id:"_2glad_03"},
-		{src:"images/_2glad_05.png", id:"_2glad_05"},
-		{src:"images/_2glad_07.png", id:"_2glad_07"},
-		{src:"images/_2glad_10.png", id:"_2glad_10"},
-		{src:"images/_2glad_14.png", id:"_2glad_14"},
-		{src:"images/_2glad_17.png", id:"_2glad_17"},
-		{src:"images/_2glad_19.png", id:"_2glad_19"},
-		{src:"images/_2glad_23.png", id:"_2glad_23"},
-		{src:"images/_2glad_24.png", id:"_2glad_24"},
-		{src:"images/_2glad_27.png", id:"_2glad_27"},
-		{src:"images/_2glad_29.png", id:"_2glad_29"},
-		{src:"images/_2glad_32.png", id:"_2glad_32"},
-		{src:"images/_2glad_34.png", id:"_2glad_34"},
+		{src:"images/bedro.png", id:"bedro"},
 		{src:"images/gladiator_by_belzaphd7xdki4.jpg", id:"gladiator_by_belzaphd7xdki4"},
+		{src:"images/golova1.png", id:"golova1"},
+		{src:"images/golova2.png", id:"golova2"},
+		{src:"images/mech.png", id:"mech"},
+		{src:"images/noga.png", id:"noga"},
+		{src:"images/noga2.png", id:"noga2"},
+		{src:"images/noga3.png", id:"noga3"},
+		{src:"images/noga4.png", id:"noga4"},
+		{src:"images/pika.png", id:"pika"},
+		{src:"images/plecho.png", id:"plecho"},
+		{src:"images/ruka1.png", id:"ruka1"},
 		{src:"images/smoke2.png", id:"smoke2"},
 		{src:"images/stats.png", id:"stats"},
 		{src:"images/sword.png", id:"sword"},
+		{src:"images/telo1.png", id:"telo1"},
+		{src:"images/telo2.png", id:"telo2"},
 		{src:"images/web_flag04.png", id:"web_flag04"},
 		{src:"images/web_tourney_reward_gold_right.png", id:"web_tourney_reward_gold_right"}
 	]
@@ -37,88 +37,76 @@ lib.properties = {
 
 
 
-(lib._2glad_03 = function() {
-	this.initialize(img._2glad_03);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,46,78);
-
-
-(lib._2glad_05 = function() {
-	this.initialize(img._2glad_05);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,40,27);
-
-
-(lib._2glad_07 = function() {
-	this.initialize(img._2glad_07);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,29,54);
-
-
-(lib._2glad_10 = function() {
-	this.initialize(img._2glad_10);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,125,166);
-
-
-(lib._2glad_14 = function() {
-	this.initialize(img._2glad_14);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,103,87);
-
-
-(lib._2glad_17 = function() {
-	this.initialize(img._2glad_17);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,39,33);
-
-
-(lib._2glad_19 = function() {
-	this.initialize(img._2glad_19);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,94,231);
-
-
-(lib._2glad_23 = function() {
-	this.initialize(img._2glad_23);
+(lib.bedro = function() {
+	this.initialize(img.bedro);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,90,88);
-
-
-(lib._2glad_24 = function() {
-	this.initialize(img._2glad_24);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,41,123);
-
-
-(lib._2glad_27 = function() {
-	this.initialize(img._2glad_27);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,52,86);
-
-
-(lib._2glad_29 = function() {
-	this.initialize(img._2glad_29);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,66,89);
-
-
-(lib._2glad_32 = function() {
-	this.initialize(img._2glad_32);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,50,93);
-
-
-(lib._2glad_34 = function() {
-	this.initialize(img._2glad_34);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,51,93);
 
 
 (lib.gladiator_by_belzaphd7xdki4 = function() {
 	this.initialize(img.gladiator_by_belzaphd7xdki4);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,700,463);
+
+
+(lib.golova1 = function() {
+	this.initialize(img.golova1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,46,78);
+
+
+(lib.golova2 = function() {
+	this.initialize(img.golova2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,40,27);
+
+
+(lib.mech = function() {
+	this.initialize(img.mech);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,94,231);
+
+
+(lib.noga = function() {
+	this.initialize(img.noga);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,52,86);
+
+
+(lib.noga2 = function() {
+	this.initialize(img.noga2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,66,89);
+
+
+(lib.noga3 = function() {
+	this.initialize(img.noga3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,50,93);
+
+
+(lib.noga4 = function() {
+	this.initialize(img.noga4);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,51,93);
+
+
+(lib.pika = function() {
+	this.initialize(img.pika);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,41,123);
+
+
+(lib.plecho = function() {
+	this.initialize(img.plecho);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,39,33);
+
+
+(lib.ruka1 = function() {
+	this.initialize(img.ruka1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,29,54);
 
 
 (lib.smoke2 = function() {
@@ -137,6 +125,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,100,93);
 	this.initialize(img.sword);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,100,110);
+
+
+(lib.telo1 = function() {
+	this.initialize(img.telo1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,125,166);
+
+
+(lib.telo2 = function() {
+	this.initialize(img.telo2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,103,87);
 
 
 (lib.web_flag04 = function() {
@@ -383,7 +383,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,265.8,321);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_05();
+	this.instance = new lib.golova2();
 	this.instance.setTransform(-20,-13.5);
 
 	this.addChild(this.instance);
@@ -395,7 +395,7 @@ p.nominalBounds = new cjs.Rectangle(-20,-13.5,40,27);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_07();
+	this.instance = new lib.ruka1();
 	this.instance.setTransform(-14.5,-27);
 
 	this.addChild(this.instance);
@@ -407,7 +407,7 @@ p.nominalBounds = new cjs.Rectangle(-14.5,-27,29,54);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_14();
+	this.instance = new lib.telo2();
 	this.instance.setTransform(-51.5,-43.5);
 
 	this.addChild(this.instance);
@@ -419,7 +419,7 @@ p.nominalBounds = new cjs.Rectangle(-51.5,-43.5,103,87);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_17();
+	this.instance = new lib.plecho();
 	this.instance.setTransform(-19.5,-16.5);
 
 	this.addChild(this.instance);
@@ -431,7 +431,7 @@ p.nominalBounds = new cjs.Rectangle(-19.5,-16.5,39,33);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_23();
+	this.instance = new lib.bedro();
 	this.instance.setTransform(-45,-44);
 
 	this.addChild(this.instance);
@@ -443,7 +443,7 @@ p.nominalBounds = new cjs.Rectangle(-45,-44,90,88);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_24();
+	this.instance = new lib.pika();
 	this.instance.setTransform(-20.5,-61.5);
 
 	this.addChild(this.instance);
@@ -455,7 +455,7 @@ p.nominalBounds = new cjs.Rectangle(-20.5,-61.5,41,123);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_27();
+	this.instance = new lib.noga();
 	this.instance.setTransform(-26,-43);
 
 	this.addChild(this.instance);
@@ -467,7 +467,7 @@ p.nominalBounds = new cjs.Rectangle(-26,-43,52,86);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_29();
+	this.instance = new lib.noga2();
 	this.instance.setTransform(-33,-44.5);
 
 	this.addChild(this.instance);
@@ -479,7 +479,7 @@ p.nominalBounds = new cjs.Rectangle(-33,-44.5,66,89);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_10();
+	this.instance = new lib.telo1();
 	this.instance.setTransform(-62.5,-83);
 
 	this.addChild(this.instance);
@@ -491,7 +491,7 @@ p.nominalBounds = new cjs.Rectangle(-62.5,-83,125,166);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_19();
+	this.instance = new lib.mech();
 	this.instance.setTransform(-47,-115.5);
 
 	this.addChild(this.instance);
@@ -503,7 +503,7 @@ p.nominalBounds = new cjs.Rectangle(-47,-115.5,94,231);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_32();
+	this.instance = new lib.noga3();
 	this.instance.setTransform(-25,-46.5);
 
 	this.addChild(this.instance);
@@ -515,7 +515,7 @@ p.nominalBounds = new cjs.Rectangle(-25,-46.5,50,93);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_34();
+	this.instance = new lib.noga4();
 	this.instance.setTransform(-25.5,-46.5);
 
 	this.addChild(this.instance);
@@ -527,7 +527,7 @@ p.nominalBounds = new cjs.Rectangle(-25.5,-46.5,51,93);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib._2glad_03();
+	this.instance = new lib.golova1();
 	this.instance.setTransform(-23,-39);
 
 	this.addChild(this.instance);
