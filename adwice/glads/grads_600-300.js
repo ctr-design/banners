@@ -994,7 +994,7 @@ p.nominalBounds = new cjs.Rectangle(-360.1,26.5,334,304.2);
 	this.timeline.addTween(cjs.Tween.get(this.fon).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-949.6,88,1971.6,472.1);
+p.nominalBounds = new cjs.Rectangle(-949.6,88,1971.7,472.1);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
