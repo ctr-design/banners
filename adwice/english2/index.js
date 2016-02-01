@@ -203,6 +203,21 @@ p.nominalBounds = null;
 p.nominalBounds = new cjs.Rectangle(-30,-30,60,60);
 
 
+(lib.Symbol36 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text = new cjs.Text("НАВЕДИ МЫШЬ", "bold 22px 'Arial Black'", "#FFFFFF");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 24;
+	this.text.setTransform(65.5,0,0.66,0.66);
+	this.text.shadow = new cjs.Shadow("rgba(0,0,0,1)",0,0,5);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-2.9,-3,142,33);
+
+
 (lib.shape220 = function() {
 	this.initialize();
 
@@ -875,6 +890,18 @@ p.nominalBounds = new cjs.Rectangle(-102.6,-78.1,195.3,143.1);
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(-107.3,-91.6,229,167.8);
+
+
+(lib.Symbol26 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.instance = new lib.Symbol36();
+	this.instance.setTransform(66.8,11.6,1,1,0,0,0,66.8,11.6);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-2.9,-3,142,33);
 
 
 (lib.sprite221 = function() {
@@ -1623,6 +1650,22 @@ p.nominalBounds = new cjs.Rectangle(-49.1,-16.9,96.9,33.9);
 p.nominalBounds = new cjs.Rectangle(-245.2,43.6,96.9,33.9);
 
 
+(lib.Символ9 = function() {
+	this.initialize();
+
+	// Layer 2
+	this.instance = new lib.Symbol26();
+	this.instance.setTransform(1,34.1,1,1,0,0,0,66.8,11.6);
+
+	// Слой 1
+	this.cir = new lib.sprite113();
+	this.cir.setTransform(0.1,0.1,0.499,0.499,0,0,0,27.6,27.6);
+
+	this.addChild(this.cir,this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-68.8,-19,142,71.5);
+
+
 (lib.Символ57 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1638,41 +1681,41 @@ p.nominalBounds = new cjs.Rectangle(-245.2,43.6,96.9,33.9);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(9).call(this.frame_9).wait(11));
 
 	// Слой 5
-	this.cir = new lib.sprite113();
-	this.cir.setTransform(-58.7,-16.2,0.906,0.906,0,0,0,27.6,27.6);
+	this.instance = new lib.Символ9();
+	this.instance.setTransform(-54.6,-29.3,0.715,0.715);
 
-	this.timeline.addTween(cjs.Tween.get(this.cir).to({x:83.8},9).to({x:-58.7},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:82.9},9).to({x:-54.6},10).wait(1));
 
 	// Слой 1
-	this.instance = new lib.Символ16();
-	this.instance.setTransform(284,-138.6);
-	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.Символ16(), 3);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:130},9).to({x:284},10).wait(1));
-
-	// Слой 2
-	this.instance_1 = new lib.Символ19();
-	this.instance_1.setTransform(284,-8.3);
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.Символ19(), 3);
+	this.instance_1 = new lib.Символ16();
+	this.instance_1.setTransform(284,-138.6);
+	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.Символ16(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:130},9).to({x:284},10).wait(1));
 
-	// Слой 3
-	this.instance_2 = new lib.Символ18();
-	this.instance_2.setTransform(284,-50.5);
-	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.Символ18(), 3);
+	// Слой 2
+	this.instance_2 = new lib.Символ19();
+	this.instance_2.setTransform(284,-8.3);
+	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.Символ19(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({x:130},9).to({x:284},10).wait(1));
 
-	// Слой 4
-	this.instance_3 = new lib.Символ17();
-	this.instance_3.setTransform(284,-94.5);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 2, false, new lib.Символ17(), 3);
+	// Слой 3
+	this.instance_3 = new lib.Символ18();
+	this.instance_3.setTransform(284,-50.5);
+	new cjs.ButtonHelper(this.instance_3, 0, 1, 2, false, new lib.Символ18(), 3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({x:130},9).to({x:284},10).wait(1));
 
+	// Слой 4
+	this.instance_4 = new lib.Символ17();
+	this.instance_4.setTransform(284,-94.5);
+	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.Символ17(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({x:130},9).to({x:284},10).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-95,-106.7,232.2,182.7);
+p.nominalBounds = new cjs.Rectangle(-104.6,-106.7,241.8,182.7);
 
 
 // stage content:
